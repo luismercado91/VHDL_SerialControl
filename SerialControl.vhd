@@ -2,13 +2,7 @@
 
 --*
 
---* Name: FinalProject
-
---* Designers: Braiden Gnagey & Rachnicha Rojjhanarittikorn & Luis Mercado
-
---* Kennesaw State University
-
---* 11/**/2024
+--* Name: VHDL_SerialControl
 
 --* For the purpose of reading reading inputs over serial
 
