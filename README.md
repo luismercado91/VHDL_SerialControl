@@ -43,6 +43,8 @@ UART RX (external)
 │         └──────────► LED_DRIVER ──────────────────► leds[15:0]
 └─────────────────────────────────────────────────────┘
 ```
+<img width="925" height="720" alt="AdobeExpressPhotos_8dbe2abee0a04cd19b291d2792b85a94_CopyEdited" src="https://github.com/user-attachments/assets/e4513535-c58c-43cc-af73-e83858cf8601" />
+
 
 ---
 
