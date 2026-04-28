@@ -21,28 +21,6 @@ Connect to the board using PuTTY (or any terminal emulator) at the appropriate b
 
 The design is implemented as a **Moore state machine** (`SerialControl`) with the following internal structure:
 
-```
-UART RX (external)
-      │
-      ▼
-  dataReady / dataOut[7:0]
-      │
-      ▼
-┌─────────────────────────────────────────────────────┐
-│                  SerialControl                       │
-│                                                     │
-│  STATE_REGISTER ──► STATE_TRANSITIONS               │
-│         │                  │                        │
-│         ▼                  ▼                        │
-│  CONTROL_SIGNALS ──► COMMAND_REG  ──► letter        │
-│         │            TENS_DIGIT   ──► firstDigit    │
-│         │            ONES_DIGIT   ──► secondDigit   │
-│         │                  │                        │
-│         │           SERIAL_TO_INTEGER ──► ledValue  │
-│         │                  │                        │
-│         └──────────► LED_DRIVER ──────────────────► leds[15:0]
-└─────────────────────────────────────────────────────┘
-```
 <img width="925" height="720" alt="AdobeExpressPhotos_8dbe2abee0a04cd19b291d2792b85a94_CopyEdited" src="https://github.com/user-attachments/assets/e4513535-c58c-43cc-af73-e83858cf8601" />
 
 
